@@ -18,12 +18,12 @@
                 </a>
                 <div class="contacts">
                     <a href="tel:+7800039210" class="contacts__phone">8 (800) 00-392-10</a>
+                    <div class="contacts__schedule"><u>График работы</u></div>
                 </div>
-                <div class="schedule"><u>График работы</u></div>
             </div>
         </header>
         <main class="page-content">
-            <div class="container main__container">
+            <div class="container page-content__container">
                 <aside class="nav">
                     <ul class="nav__list">
                         <li class="nav__item nav__item--active">
@@ -40,15 +40,17 @@
                 </aside>
                 <div class="main-content">
                     <img src="./img/airplanet.png" alt="Логотип air planet" class="airplanet-logo">
-                    <article class="rates">
+                    <section class="rates">
                         <h2 class="rates__title">Тарифы</h2>
                         <ul class="rates__list">
                             <li class="rates__item">
                                 <div class="rates__container">
-                                    <img src="./img/flower.png" alt="Тариф Стандарт" class="rates__logo">
+                                    <div class="rates__logo-container">
+                                        <img src="./img/flower.png" alt="Тариф Стандарт" class="rates__logo">
+                                    </div>
                                     <h4 class="rates__title">СТАНДАРТ</h4>
                                     <div class="rates__desc">
-                                        <div class="rates__desc-item">Создан для вашего комфортного отдыха</div>
+                                        <div class="rates__desc-title">Создан для вашего комфортного отдыха</div>
                                         <ul class="rates__item-list">
                                             <li class="rates__desc-item">Питание включено</li>
                                             <li class="rates__desc-item">Багаж (5 кг)</li>
@@ -60,10 +62,11 @@
                             </li>
                             <li class="rates__item">
                                 <div class="rates__container">
-                                    <img src="./img/star.png" alt="Тариф Премиум" class="rates__logo">
+                                    <div class="rates__logo-container">
+                                        <img src="./img/star.png" alt="Тариф Премиум" class="rates__logo"></div>
                                     <h4 class="rates__title">ПРЕМИУМ</h4>
                                     <div class="rates__desc">
-                                        <div class="rates__desc-item">Для любителей<br>хороших впечатлений</div>
+                                        <div class="rates__desc-title">Для любителей<br>хороших впечатлений</div>
                                         <ul class="rates__item-list">
                                             <li class="rates__desc-item">Питание включено</li>
                                             <li class="rates__desc-item">Багаж (5 кг)</li>
@@ -75,10 +78,11 @@
                             </li>
                             <li class="rates__item">
                                 <div class="rates__container">
-                                    <img src="./img/palette.png" alt="Тариф Лакшери" class="rates__logo">
+                                    <div class="rates__logo-container">
+                                        <img src="./img/palette.png" alt="Тариф Лакшери" class="rates__logo"></div>
                                     <h4 class="rates__title">ЛАКШЕРИ</h4>
                                     <div class="rates__desc">
-                                        <div class="rates__desc-item">Все самое лучшее<br>и незабываемое</div>
+                                        <div class="rates__desc-title">Все самое лучшее<br>и незабываемое</div>
                                         <ul class="rates__item-list">
                                             <li class="rates__desc-item">Питание включено</li>
                                             <li class="rates__desc-item">Багаж (5 кг)</li>
@@ -89,8 +93,8 @@
                                 </div>
                             </li>
                         </ul>
-                    </article>
-                    <article class="last-news">
+                    </section>
+                    <section class="news">
                         <h2 class="news__title">Последние новости</h2>
                         <ul class="news__posts">
                             <li class="news__post">
@@ -135,10 +139,13 @@
                                 </div>
                             </li>
                         </ul>
-                    </article>
+                    </section>
                     <div class="pagination">
                         <div class="pagination__pager">
                             <div class="pagination__display">Cтраница 1 из 7</div>
+                            <div class="pagination__item-arrow">
+                                <a href="#" class="pagination__button">&lt;</a>
+                            </div>
                             <ul class="pagination__list">
                                 <li class="pagination__item  pagination__item--active">
                                     <a href="#" class="pagination__link">1</a>
@@ -161,10 +168,10 @@
                                 <li class="pagination__item">
                                     <a href="#" class="pagination__link">7</a>
                                 </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__button-next">&gt;</a>
-                                </li>
                             </ul>
+                            <div class="pagination__item-arrow">
+                                <a href="#" class="pagination__button">&gt;</a>
+                            </div>
                         </div>
 
                     </div>
@@ -174,7 +181,8 @@
         <footer class="footer">
             <div class="container footer__container">
                 <div class="about-authors">
-                    Сделано с любовью и старанием на курсе "HTML + CSS" в <a href="https://loftschool.com" class="loftschool-link"><b>LoftSchool</b></a><br>Автор работы: <b>Лавров Петр</b>
+                    Сделано с любовью и старанием на курсе "HTML + CSS" в <a href="https://loftschool.com"
+                        class="loftschool-link"><b>LoftSchool</b></a><br>Автор работы: <b>Лавров Петр</b>
                 </div>
                 <img src="./img/airplanet_logo.png" class="logo-pic" alt="Логотип air planet">
                 <div class="social-nets">
