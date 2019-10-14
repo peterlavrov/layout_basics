@@ -475,17 +475,23 @@ margin-bottom: 0px;
 }
 
 .social-nets {
+  display: block;
   position: absolute;
   right: 21px;
+  top: 50%;
+  transform: translateY(-50%);
 }
-
+.social-nets__item:nth-child(5n){
+  margin-right: 0px;
+}
 .social-nets h4 {
-  margin: 14px 0px 0px 311px;
+  margin: 0px;
+  padding-bottom: 8px;
 }
 
 .social-nets__links {
+  margin: 0px;
   padding: 0px;
-  margin: 10px 0px 0px 311px;
 }
 
 .social-nets__item {
