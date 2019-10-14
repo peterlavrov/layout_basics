@@ -522,4 +522,6 @@ margin-bottom: 0px;
   transform: translate(-50%, -50%);
 }
 
-
+.pagination__display-text {
+  vertical-align: middle;
+}
