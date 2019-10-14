@@ -412,6 +412,7 @@ margin-bottom: 0px;
 .pagination__link {
   text-decoration: none;
   color: #000;
+  vertical-align: middle;
 }
 
 .pagination__item--active .pagination__link {
@@ -490,8 +491,7 @@ margin-bottom: 0px;
   margin-right: 0px;
 }
 .social-nets h4 {
-  margin: 0px;
-  padding-bottom: 8px;
+  margin: 0px 0px 8px;
 }
 
 .social-nets__links {
