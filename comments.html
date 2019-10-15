@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=1100, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>AIR PLANET - главная страница</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="comments.css">
 </head>
 
 <body>
@@ -26,10 +26,10 @@
       <div class="container page-content__container">
         <aside class="nav">
           <ul class="nav__list">
-            <li class="nav__item nav__item--active">
+            <li class="nav__item">
               <a href="#" class="nav__page-link nav__page-link--main--icon">ГЛАВНАЯ</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item nav__item--active">
               <a href="#" class="nav__page-link nav__page-link--feed--icon">ОТЗЫВЫ</a>
             </li>
             <li class="nav__item">
@@ -39,53 +39,66 @@
 
         </aside>
         <div class="main-content">
-          <section class="news">
-            <h2 class="news__title">Отзывы</h2>
-            <ul class="news__posts">
-              <li class="news__post">
-                <div class="news__pic-container">
-                  <img src="./img/irina.png" alt="Ирина Паламарчук" class="news__pic">
+          <nav class="breadcrumps">
+            <ul class="breadcrumps__list">
+              <li class="breadcrumps__item">
+                <a href="./" class="breadcrumps__item-link">Главная</a>
+              </li>
+              <li class="breadcrumps__item">
+                <span>Отзывы</span>
+              </li>
+            </ul>
+          </nav>
+          <section class="comments">
+            <h2 class="comments__title">Отзывы</h2>
+            <ul class="comments__posts">
+              <li class="comments__post">
+                <div class="comments__pic-container">
+                  <img src="./img/irina.png" alt="Ирина Паламарчук" class="comments__pic">
                 </div>
-                <div class="news__post-item">
-                  <div class="news__post-date">12.10.2016</div>
-                  <h3 class="news__post-subject">Ирина Паламарчук</h3>
-                  <p class="news__post-text">Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремни.
+                <div class="comments__post-item">
+                  <div class="comments__post-date">12.10.2016</div>
+                  <h3 class="comments__post-subject">Ирина Паламарчук</h3>
+                  <p class="comments__post-text">Классный полет, трясло первые полчаса так, что я боялась отстегнуть
+                    ремни.
                     Слава Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было. Рекомендую эту
                     компанию, но лучше доплатить и лететь с комфортом.</p>
                 </div>
               </li>
-              <li class="news__post">
-                <div class="news__pic-container">
-                  <img src="./img/alex.png" alt="Александр Бельков" class="news__pic">
+              <li class="comments__post">
+                <div class="comments__pic-container">
+                  <img src="./img/alex.png" alt="Александр Бельков" class="comments__pic">
                 </div>
-                <div class="news__post-item">
-                  <div class="news__post-date">01.02.2016</div>
-                  <h3 class="news__post-subject">Александр Бельков</h3>
-                  <p class="news__post-text">Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали 2
+                <div class="comments__post-item">
+                  <div class="comments__post-date">01.02.2016</div>
+                  <h3 class="comments__post-subject">Александр Бельков</h3>
+                  <p class="comments__post-text">Все понравилось, вежливые стюардессы, вовремя убирают, напитки
+                    предлагали 2
                     раза, а еду – 1 раз. Единственное, что не понравилось, как то мало места для ног, но с этим у меня
                     часто проблема, рост 2,1м.</p>
                 </div>
               </li>
-              <li class="news__post">
-                <div class="news__pic-container">
-                  <img src="" alt="Игорь Николаенко" class="news__pic">
+              <li class="comments__post">
+                <div class="comments__pic-container">
+                  <img src="" alt="Игорь Николаенко" class="comments__pic">
                 </div>
-                <div class="news__post-item">
-                  <div class="news__post-date">22.12.2015</div>
-                  <h3 class="news__post-subject">Игорь Николаенко</h3>
-                  <p class="news__post-text">Кормили супер вообще! Сказали, что это из-за того, что полет менее 2,5
+                <div class="comments__post-item">
+                  <div class="comments__post-date">22.12.2015</div>
+                  <h3 class="comments__post-subject">Игорь Николаенко</h3>
+                  <p class="comments__post-text">Кормили супер вообще! Сказали, что это из-за того, что полет менее 2,5
                     часов. Но прибавьте к этому время регистрации в аэропорту. Летел с женой и мы очень проголодались.
                     Просто имейте это ввиду, берите с собой хотя бы бутерброды, чипсы какие-то или печенье.</p>
                 </div>
               </li>
-              <li class="news__post">
-                <div class="news__pic-container">
-                  <img src="./img/nastya.png" alt="Анастасия Порядная" class="news__pic">
+              <li class="comments__post">
+                <div class="comments__pic-container">
+                  <img src="./img/nastya.png" alt="Анастасия Порядная" class="comments__pic">
                 </div>
-                <div class="news__post-item">
-                  <div class="news__post-date">14.08.2015</div>
-                  <h3 class="news__post-subject">Анастасия Порядная</h3>
-                  <p class="news__post-text">За такую цену просто все отлично! Кто недоволен, платите в 2 раза больше за
+                <div class="comments__post-item">
+                  <div class="comments__post-date">14.08.2015</div>
+                  <h3 class="comments__post-subject">Анастасия Порядная</h3>
+                  <p class="comments__post-text">За такую цену просто все отлично! Кто недоволен, платите в 2 раза
+                    больше за
                     аналогичные рейсы. Мне понравилось, что на борту было чисто, я аллергик и всегда чутко реагирую на
                     пыль. Спасибо за полет! Рекомендую!</p>
                 </div>
@@ -126,6 +139,41 @@
               </div>
             </div>
 
+          </div>
+          <div class="support">
+            <div class="container support__container">
+              <p class="support__msg">
+                Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить заявку на
+                сайте или же позвонить по номеру круглосуточной поддержки 8 (800) 00-392-10.
+              </p>
+            </div>
+          </div>
+          <div class="feedback">
+            <div class="container feedback__container">
+              <form action="" method="" enctype="multipart/form-data" autocomplete="on" class="feedback__form">
+                <div class="feedback__labels">
+                  <h4 class="feedback__name-label">Ваше имя</h4>
+                  <h4 class="feedback__vk-label">Ссылка на профиль VK</h4>
+                </div>
+                <div class="feedback__user-data">
+                  <input type="text" placeholder="Андрей" class="feedback__name">
+                  <input type="text" placeholder="vk.com/example" class="feedback__vk">
+                </div>
+                <div class="feedback__comment">
+                  <h4 class="feedback__comment-label">
+                    Текст отзыва
+                  </h4>
+                  <textarea class="feedback__comment-area" name="" id="" cols="60" rows="10"
+                    placeholder="Мне понравилось"></textarea>
+                </div>
+                <div class="feedback__photo">
+                  <h4 class="feedback__photo-label">Отображать фото в отзыве?</h4>
+                  <input type="radio" name="photo">Да
+                  <input type="radio" name="photo">Нет
+                </div>
+                <button type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
