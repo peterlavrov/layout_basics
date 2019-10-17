@@ -40,9 +40,7 @@ body {
 }
 
 .header__container {
-  background: red;
   display: flex;
-  height: 76px;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
@@ -50,11 +48,11 @@ body {
 }
 
 .logo {
-  padding-left: 18px;
+  padding: 18px 0px 18px 19px;
 }
 
 .contacts {
-  padding-right: 20px;
+  padding: 18px 20px 18px;
 }
 
 .contacts__phone {
@@ -79,11 +77,12 @@ body {
 .nav,
 .main-content {
   display: inline-flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .nav {
-  width: 197px;
+  width: 18%;
+  flex-shrink: 0;
 }
 
 .nav__list {
@@ -91,32 +90,32 @@ body {
   margin: 0px;
   padding: 0px;
   flex-direction: column;
-  justify-content: space-between;
   padding-left: 18px;
 }
 
-.nav ul {
-  height: 115px;
+.main-content {
+  width: 82%;
 }
 
-.main-content {
-  width: 903px;
-}
 .breadcrumps {
   display: flex;
   font-family: "roboto", sans-serif;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 300;
   font-size: 14px;
+  margin-bottom: 14px;
 }
+
 .breadcrumps__list {
   display: flex;
   padding: 0px;
   margin: 0px;
 }
+
 .breadcrumps__list li:after {
   content: "/";
 }
+
 .breadcrumps__item--last:after {
   display: none;
 }
@@ -154,7 +153,11 @@ ul li {
   color: #000;
 }
 
-.nav__item:nth-child(3n) {
+.nav__item {
+  margin-bottom: 29px;
+}
+
+.nav__item:last-child {
   margin-bottom: 0px;
 }
 
@@ -217,15 +220,16 @@ ul li {
   font-size: 49px;
   font-style: normal;
   font-weight: bold;
-  margin: 0px;
+  margin: 0px 0px 36px;
 }
 
 .comments__pic-container {
   display: flex;
-  width: 160px;
-  height: 160px;
+  min-width: 160px;
+  min-height: 160px;
   border-radius: 50%;
   overflow: hidden;
+  margin-right: 22px;
 }
 
 .comments__pic-container img {
@@ -242,21 +246,28 @@ ul li {
   padding: 0px;
 }
 
+.comments__post:last-child {
+  margin-bottom: 0px;
+}
 
 .comments__post {
-display: flex;
+  display: flex;
+  margin-bottom: 59px;
 }
+
 .comments__post-date {
-  display: inline-block;
+  display: flex;
   font-family: 'roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   color: #656464;
   line-height: 21px;
+  padding-bottom: 3px;
 }
 
 .comments__post-subject {
+  display: flex;
   font-family: 'roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -268,6 +279,7 @@ display: flex;
 }
 
 .comments__post-text {
+  display: flex;
   font-family: 'roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -278,13 +290,9 @@ display: flex;
 }
 
 .comments__post-item {
-  display: inline-block;
-  width: 654px;
+  display: flex;
+  flex-direction: column;
   margin: 0px;
-}
-
-.comments__post:nth-child(3n) {
-  margin-bottom: 0px;
 }
 
 .comments {
@@ -293,12 +301,18 @@ display: flex;
 
 .pagination {
   display: flex;
-  text-align: center;
+  width: 100%;
+  justify-content: center;
 }
 
+.pagination__pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .pagination__display {
-  display: inline-block;
+  display: flex;
   vertical-align: top;
   width: 110px;
   font-family: 'roboto', sans-serif;
@@ -309,13 +323,15 @@ display: flex;
 }
 
 .pagination__list {
-  display: inline-block;
+  display: flex;
   font-size: 0px;
   padding-left: 0px;
 }
 
 .pagination__item {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'roboto', sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -326,20 +342,22 @@ display: flex;
 }
 
 .pagination__button {
+  display: flex;
   text-decoration: none;
   color: #000;
   vertical-align: middle;
 }
 
 .pagination__link {
+  display: flex;
+  justify-content: center;
+  align-items: ;
   text-decoration: none;
   color: #000;
-  vertical-align: middle;
 }
 
 .pagination__item--active .pagination__link {
   color: #fff;
-  vertical-align: middle;
 }
 
 .pagination__item--active {
@@ -347,7 +365,9 @@ display: flex;
 }
 
 .pagination__item-arrow {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'roboto', sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -357,8 +377,13 @@ display: flex;
   overflow: hidden;
   text-decoration: none;
 }
+
 .pagination__display-text {
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+.feedback {
+  font-size: 14px;
 }
 .footer {
   background: #4b73b5;
@@ -451,4 +476,3 @@ display: flex;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
