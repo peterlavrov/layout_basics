@@ -23,22 +23,21 @@
         </div>
       </div>
     </header>
-    <main class="page-content">
-      <div class="container page-content__container">
-        <aside class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__page-link nav__page-link--main--icon">ГЛАВНАЯ</a>
-            </li>
-            <li class="nav__item nav__item--active">
-              <a href="#" class="nav__page-link nav__page-link--feed--icon">ОТЗЫВЫ</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__page-link nav__page-link--team--icon">ЭКИПАЖ</a>
-            </li>
-          </ul>
-
-        </aside>
+    <div class="container page-content__container">
+      <aside class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__page-link nav__page-link--main--icon">ГЛАВНАЯ</a>
+          </li>
+          <li class="nav__item nav__item--active">
+            <a href="#" class="nav__page-link nav__page-link--feed--icon">ОТЗЫВЫ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__page-link nav__page-link--team--icon">ЭКИПАЖ</a>
+          </li>
+        </ul>
+      </aside>
+      <main class="page-content">
         <div class="main-content">
           <nav class="breadcrumps">
             <ul class="breadcrumps__list">
@@ -81,7 +80,7 @@
               </li>
               <li class="comments__post">
                 <div class="comments__pic-container">
-                  <img src="" alt="Игорь Николаенко" class="comments__pic">
+                  <img src="./img/igor.png" alt="Игорь Николаенко" class="comments__pic">
                 </div>
                 <div class="comments__post-item">
                   <div class="comments__post-date">22.12.2015</div>
@@ -105,80 +104,80 @@
                 </div>
               </li>
             </ul>
+            <div class="pagination">
+              <div class="container pagination__container">
+                <div class="pagination__display"><span class="pagination__display-text">Cтраница 1 из 7</span></div>
+                <div class="pagination__item-arrow">
+                  <a href="#" class="pagination__button">&lt;</a>
+                </div>
+                <ul class="pagination__list">
+                  <li class="pagination__item  pagination__item--active">
+                    <a href="#" class="pagination__link">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">3</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">4</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">5</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">6</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">7</a>
+                  </li>
+                </ul>
+                <div class="pagination__item-arrow">
+                  <a href="#" class="pagination__button">&gt;</a>
+                </div>
+              </div>
+            </div>
           </section>
-          <div class="pagination">
-            <div class="pagination__pager">
-              <div class="pagination__display"><span class="pagination__display-text">Cтраница 1 из 7</span></div>
-              <div class="pagination__item-arrow">
-                <a href="#" class="pagination__button">&lt;</a>
-              </div>
-              <ul class="pagination__list">
-                <li class="pagination__item  pagination__item--active">
-                  <a href="#" class="pagination__link">1</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">2</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">3</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">4</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">5</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">6</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">7</a>
-                </li>
-              </ul>
-              <div class="pagination__item-arrow">
-                <a href="#" class="pagination__button">&gt;</a>
-              </div>
-            </div>
 
-          </div>
-          <div class="support">
-            <div class="container support__container">
-              <p class="support__msg">
-                Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить заявку на
-                сайте или же позвонить по номеру круглосуточной поддержки 8 (800) 00-392-10.
-              </p>
-            </div>
-          </div>
-          <div class="feedback">
-            <div class="container feedback__container">
-              <form action="" method="" enctype="multipart/form-data" autocomplete="on" class="feedback__form">
-                <div class="feedback__labels">
-                  <h4 class="feedback__name-label">Ваше имя</h4>
-                  <h4 class="feedback__vk-label">Ссылка на профиль VK</h4>
-                </div>
-                <div class="feedback__user-data">
-                  <input type="text" placeholder="Андрей" class="feedback__name">
-                  <input type="text" placeholder="vk.com/example" class="feedback__vk">
-                </div>
-                <div class="feedback__comment">
-                  <h4 class="feedback__comment-label">
-                    Текст отзыва
-                  </h4>
-                  <textarea class="feedback__comment-area" name="" id="" cols="60" rows="10"
-                    placeholder="Мне понравилось"></textarea>
-                </div>
-                <div class="feedback__photo">
-                  <h4 class="feedback__photo-label">Отображать фото в отзыве?</h4>
-                  <input type="radio" name="photo">Да
-                  <input type="radio" name="photo">Нет
-                </div>
-                <button type="submit">Отправить</button>
-              </form>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
     </main>
+    <div class="support">
+      <div class="container support__container">
+        <p class="support__msg">
+          Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить заявку на
+          сайте или же позвонить по номеру круглосуточной поддержки 8 (800) 00-392-10.
+        </p>
+      </div>
+    </div>
+    <div class="feedback">
+      <div class="container feedback__container">
+        <form action="" method="" enctype="multipart/form-data" autocomplete="on" class="feedback__form">
+          <label class="feedback__labels">
+            <h4 class="feedback__name-label">Ваше имя</h4>
+            <input type="text" placeholder="Андрей" class="feedback__name">
+          </label>
+          <label class="feedback__user-data">
+            <h4 class="feedback__vk-label">Ссылка на профиль VK</h4>
+            <input type="text" placeholder="vk.com/example" class="feedback__vk">
+          </label>
+          <div class="feedback__comment">
+            <h4 class="feedback__comment-label">
+              Текст отзыва
+            </h4>
+            <textarea class="feedback__comment-area" name="" id="" cols="60" rows="10"
+              placeholder="Мне понравилось"></textarea>
+          </div>
+          <div class="feedback__photo">
+            <h4 class="feedback__photo-label">Отображать фото в отзыве?</h4>
+            <input type="radio" name="photo">Да
+            <input type="radio" name="photo">Нет
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
     <footer class="footer">
       <div class="container footer__container">
         <div class="about-authors">
