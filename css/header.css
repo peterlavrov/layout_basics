@@ -1,0 +1,38 @@
+.header {
+  background: #4b73b5;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 76px;
+}
+
+.logo {
+  padding-left: 19px;
+}
+
+.contacts {
+  padding-right: 20px;
+  flex-shrink: 0;
+}
+
+.contacts__phone {
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contacts__schedule {
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: right;
+  text-decoration: underline;
+}

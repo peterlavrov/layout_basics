@@ -1,0 +1,6 @@
+@import url(./sidebar.css);
+@import url(./main-content.css);
+
+.page-content__container {
+  display: flex;
+}

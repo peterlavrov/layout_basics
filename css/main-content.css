@@ -1,0 +1,95 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+.breadcrumps {
+  display: flex;
+  font-family: "roboto";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.breadcrumps__list {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+.breadcrumps__item-link {
+  color: #1c5bc3;
+}
+
+.breadcrumps__list li:after {
+  content: "/";
+}
+.breadcrumps__list li:last-child::after {
+  display: none;
+}
+.team {
+  display: flex;
+  flex-direction: column;
+}
+.team__title {
+  font-family: 'roboto';
+  font-size: 49px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 0.78;
+  letter-spacing: normal;
+  text-align: left;
+  color: #221f1f;
+}
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team__member {
+  flex-grow: 1;
+  flex-basis: 33.3%;
+}
+
+.team__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team__logo-container {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.team__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team__member-profile {
+  margin: 0;
+  padding: 0 6.05% 0;
+}
+.team__name {
+  font-family: 'roboto';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  color: #221f1f;
+  line-height: 21px;
+}
+.team__position {
+  font-family: 'roboto';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  color: #4b73b5;
+  line-height: 21px;  
+}
+.team__member-profile {
+  text-align: center;
+  font-family: 'roboto';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  color: #221f1f;
+  line-height: 21px;  
+}

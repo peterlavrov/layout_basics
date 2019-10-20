@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AIR PLANET - главная страница</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./normalize.css">
 </head>
 
 <body>
@@ -26,17 +27,16 @@
             <div class="container page-content__container">
                 <aside class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item nav__item--active">
+                        <li class="nav__item">
                             <a href="#" class="nav__page-link nav__page-link--main--icon">ГЛАВНАЯ</a>
                         </li>
-                        <li class="nav__item">
+                        <li class="nav__item nav__item--active">
                             <a href="./comments.html" class="nav__page-link nav__page-link--feed--icon">ОТЗЫВЫ</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__page-link nav__page-link--team--icon">ЭКИПАЖ</a>
+                            <a href="./team.html" class="nav__page-link nav__page-link--team--icon">ЭКИПАЖ</a>
                         </li>
                     </ul>
-
                 </aside>
                 <div class="main-content">
                     <img src="./img/airplanet.png" alt="Логотип air planet" class="airplanet-logo">
@@ -141,8 +141,9 @@
                         </ul>
                     </section>
                     <div class="pagination">
-                        <div class="pagination__pager">
-                            <div class="pagination__display"><span class="pagination__display-text">Cтраница 1 из 7</span></div>
+                        <div class="container pagination__container">
+                            <div class="pagination__display"><span class="pagination__display-text">Cтраница 1 из
+                                    7</span></div>
                             <div class="pagination__item-arrow">
                                 <a href="#" class="pagination__button">&lt;</a>
                             </div>
@@ -173,7 +174,6 @@
                                 <a href="#" class="pagination__button">&gt;</a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -181,12 +181,13 @@
         <footer class="footer">
             <div class="container footer__container">
                 <div class="about-authors">
-                    Сделано с любовью и старанием на курсе "HTML + CSS" в <a href="https://loftschool.com"
-                        class="loftschool-link"><b>LoftSchool</b></a><br>Автор работы: <b>Лавров Петр</b>
+                    Сделано с любовью и старанием на курсе "HTML + CSS" в LoftSchool Автор работы: Лавров Петр
                 </div>
-                <img src="./img/airplanet_logo.png" class="logo-pic" alt="Логотип air planet">
+                <div class="logo-pic">
+                    <img src="./img/airplanet_logo.png" class="logo-pic__img" alt="Логотип air planet">
+                </div>
                 <div class="social-nets">
-                    <h4 class="social-nets__title">Наши социальные сети</h4>
+                    <div class="social-nets__title">Наши социальные сети</div>
                     <ul class="social-nets__links">
                         <li class="social-nets__item">
                             <a href="https://vk.com/lavrovpeter" class="social-nets__vk-link"><img src="./img/vk.png"
