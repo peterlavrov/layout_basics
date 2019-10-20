@@ -23,21 +23,21 @@
         </div>
       </div>
     </header>
-    <div class="container page-content__container">
-      <aside class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="./" class="nav__page-link nav__page-link--main--icon">ГЛАВНАЯ</a>
-          </li>
-          <li class="nav__item nav__item--active">
-            <a href="#" class="nav__page-link nav__page-link--feed--icon">ОТЗЫВЫ</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__page-link nav__page-link--team--icon">ЭКИПАЖ</a>
-          </li>
-        </ul>
-      </aside>
-      <main class="page-content">
+    <main class="page-content">
+      <div class="container page-content__container">
+        <aside class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./" class="nav__page-link nav__page-link--main--icon">ГЛАВНАЯ</a>
+            </li>
+            <li class="nav__item nav__item--active">
+              <a href="#" class="nav__page-link nav__page-link--feed--icon">ОТЗЫВЫ</a>
+            </li>
+            <li class="nav__item">
+              <a href="./team.html" class="nav__page-link nav__page-link--team--icon">ЭКИПАЖ</a>
+            </li>
+          </ul>
+        </aside>
         <div class="main-content">
           <nav class="breadcrumps">
             <ul class="breadcrumps__list">
@@ -104,44 +104,42 @@
                 </div>
               </li>
             </ul>
-            <div class="pagination">
-              <div class="container pagination__container">
-                <div class="pagination__display"><span class="pagination__display-text">Cтраница 1 из 7</span></div>
-                <div class="pagination__item-arrow">
-                  <a href="#" class="pagination__button">&lt;</a>
-                </div>
-                <ul class="pagination__list">
-                  <li class="pagination__item  pagination__item--active">
-                    <a href="#" class="pagination__link">1</a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#" class="pagination__link">2</a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#" class="pagination__link">3</a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#" class="pagination__link">4</a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#" class="pagination__link">5</a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#" class="pagination__link">6</a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#" class="pagination__link">7</a>
-                  </li>
-                </ul>
-                <div class="pagination__item-arrow">
-                  <a href="#" class="pagination__button">&gt;</a>
-                </div>
+          </section>
+          <div class="pagination">
+            <div class="container pagination__container">
+              <div class="pagination__display"><span class="pagination__display-text">Cтраница 1 из 7</span></div>
+              <div class="pagination__item-arrow">
+                <a href="#" class="pagination__button">&lt;</a>
+              </div>
+              <ul class="pagination__list">
+                <li class="pagination__item  pagination__item--active">
+                  <a href="#" class="pagination__link">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">3</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">4</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">5</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">6</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">7</a>
+                </li>
+              </ul>
+              <div class="pagination__item-arrow">
+                <a href="#" class="pagination__button">&gt;</a>
               </div>
             </div>
-          </section>
-
+          </div>
         </div>
-    </div>
     </main>
     <div class="support">
       <div class="container support__container">
@@ -154,27 +152,43 @@
     <div class="feedback">
       <div class="container feedback__container">
         <form action="" method="" enctype="multipart/form-data" autocomplete="on" class="feedback__form">
-          <label class="feedback__labels">
-            <h4 class="feedback__name-label">Ваше имя</h4>
-            <input type="text" placeholder="Андрей" class="feedback__name">
-          </label>
-          <label class="feedback__user-data">
-            <h4 class="feedback__vk-label">Ссылка на профиль VK</h4>
-            <input type="text" placeholder="vk.com/example" class="feedback__vk">
-          </label>
-          <div class="feedback__comment">
-            <h4 class="feedback__comment-label">
-              Текст отзыва
-            </h4>
-            <textarea class="feedback__comment-area" name="" id="" cols="60" rows="10"
-              placeholder="Мне понравилось"></textarea>
+          <h2 class="feedback__form-title">Оставить отзыв</h2>
+          <div class="feedback__form-recepient">
+            <label class="feedback__form-label">
+              <div class="feedback__form-name">Ваше имя</div>
+              <input type="text" placeholder="Андрей" class="feedback__form-input">
+            </label>
+            <label class="feedback__form-label">
+              <div class="feedback__form-name">Ссылка на профиль VK</div>
+              <input type="text" placeholder="vk.com/example" class="feedback__form-input">
+            </label>
           </div>
-          <div class="feedback__photo">
-            <h4 class="feedback__photo-label">Отображать фото в отзыве?</h4>
-            <input type="radio" name="photo">Да
-            <input type="radio" name="photo">Нет
+          <div class="feedback__answer">
+            <div class="feedback__answer-label">
+              <div class="feedback__form-name">
+                Текст отзыва
+              </div>
+              <textarea class="feedback__form-input feedback__answer-comment" name="" id=""
+                placeholder="Мне понравилось"></textarea>
+            </div>
+            <div class="feedback__question">
+              <div class="feedback__question-title">Отображать фото в отзыве?</div>
+              <div class="feedback__questions-options">
+                <label class="option">
+                  <div class="option__radio"></div>
+                  <div class="option__title">Да</div>
+                </label>
+                <label class="option">
+                  <div class="option__radio"></div>
+                  <div class="option__title">Нет</div>
+                </label>
+              </div>
+            </div>
+            <div feedback__buttons>
+              <button type="reset">Очистить</button>
+              <button type="submit">Отправить</button>
+            </div>
           </div>
-          <button type="submit">Отправить</button>
         </form>
       </div>
     </div>
@@ -182,11 +196,14 @@
       <div class="container footer__container">
         <div class="about-authors">
           Сделано с любовью и старанием на курсе "HTML + CSS" в <a href="https://loftschool.com"
-            class="loftschool-link"><b>LoftSchool</b></a><br>Автор работы: <b>Лавров Петр</b>
+            class="loftschool-link">LoftSchool</a> Автор работы:
+          Лавров Петр
         </div>
-        <img src="./img/airplanet_logo.png" class="logo-pic" alt="Логотип air planet">
+        <div class="logo-pic">
+          <img src="./img/airplanet_logo.png" class="logo-pic__img" alt="Логотип air planet">
+        </div>
         <div class="social-nets">
-          <h4 class="social-nets__title">Наши социальные сети</h4>
+          <div class="social-nets__title">Наши социальные сети</div>
           <ul class="social-nets__links">
             <li class="social-nets__item">
               <a href="https://vk.com/lavrovpeter" class="social-nets__vk-link"><img src="./img/vk.png" alt="Вконтакте"
