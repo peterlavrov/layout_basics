@@ -1,6 +1,7 @@
 .nav{
   display: flex;
   flex-wrap: wrap;
+  min-width: 17.3%;
 }
 .nav__list {
   display: flex;
@@ -8,7 +9,6 @@
   padding: 0px;
   flex-direction: column;
   padding-left: 18px;
-  width: 181px;
 }
 
 .nav__page-link:before {
