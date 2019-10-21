@@ -64,6 +64,7 @@
 }
 .team__logo-container {
   display: flex;
+  position: relative;
   width: 160px;
   height: 160px;
   border-radius: 50%;
@@ -72,7 +73,22 @@
   align-items: center;
   margin-bottom: 18px;
 }
-
+.team__logo-container::after {
+  content: "";
+  position: absolute;
+  background: rgba(75, 115, 181, 0.6);;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.team__logo-name {
+  position: absolute;
+  font-family: 'roboto';
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+}
 .team__desc {
   display: flex;
   flex-direction: column;
