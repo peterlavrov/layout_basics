@@ -2,9 +2,8 @@
 @import url(./fonts.css);
 @import url(./base.css);
 @import url(./header.css);
-@import url(./page-content.css);
+@import url(./comments__main-content.css);
 @import url(./footer.css);
-
 
 /* @font-face {
   font-family: 'roboto';
@@ -35,19 +34,16 @@
 
 body {
   margin: 0px;
-}
-
-.wrapper {
-  min-width: 1100px;
-}
-
-.header {
-  background: #4b73b5;
+  box-sizing: border-box;
 }
 
 .container {
   margin: 0 auto;
-  width: 1100px;
+  max-width: 1100px;
+}
+
+.header {
+  background: #4b73b5;
 }
 
 .header__container {
@@ -55,7 +51,7 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 76px;
-  margin-bottom: 12px;
+  margin-bottom: 45px;
 }
 
 .logo {
@@ -86,24 +82,12 @@ body {
   text-decoration: underline;
 }
 
-.page-content__container {
-  display: flex;
 
-}
 
 .nav,
 .main-content {
   display: flex;
-}
-
-.main-content {
-  flex-grow: 1;
-  flex-direction: column;
-}
-
-.nav {
-  max-width: 194px;
-  padding-top: 34px;
+  flex-wrap: wrap;
 }
 
 .nav__list {
@@ -113,18 +97,6 @@ body {
   flex-direction: column;
   padding-left: 18px;
   width: 181px;
-}
-
-.main-content {
-  width: 900px;
-}
-
-.page-content__container {
-  padding-bottom: 54px;
-}
-
-ul li {
-  list-style: none;
 }
 
 .nav__page-link:before {
@@ -206,162 +178,113 @@ ul li {
   background-image: url('./img/team_icon_active.png');
 }
 
-.airplanet-logo {
-  margin-bottom: 7px;
+ul li {
+  list-style: none;
 }
 
-.rates {
+.main-content {
+  flex-grow: 1;
+}
+
+.page-content__container {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 65px;
 }
 
-.rates__list {
+.page-content {
+  flex-grow: 1;
+}
+
+.breadcrumps {
   display: flex;
-  justify-content: space-between;
-  padding: 0px;
-  margin: 0px;
-}
-.rates__item {
-  padding-left: 0px;
-  display: inline-block;
-  width: 221px;
-  text-align: center;
-  vertical-align: top;
-}
-.rates__title {
   font-family: "roboto", sans-serif;
-  font-size: 49px;
-  font-style: normal;
-  font-weight: bold;
-  margin: 0px;
-}
-
-.rates__item h4 {
-  font-family: "roboto", sans-serif;
-  font-size: 10.78px;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 2.6px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
   margin-bottom: 14px;
 }
 
-.rates__item-list li {
-  text-align: left;
-  line-height: 30px;
+.breadcrumps__list {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
 }
 
-.rates__item-list li:before {
-  display: inline-block;
-  content: "●";
-  font-size: 9px;
-  vertical-align: top;
-  margin-right: 20px;
+.breadcrumps__item-link {
+  color: #1c5bc3;
 }
 
-.rates__desc {
-  font-family: "roboto", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
+.breadcrumps__list li:after {
+  content: "/";
 }
 
-.rates__price {
-  font-family: "roboto", sans-serif;
-  font-size: 53.89px;
-  font-style: normal;
-  font-weight: normal;
-  margin: 12px 0;
+.breadcrumps__item--last:after {
+  display: none;
 }
 
-.rates__price:before {
-  content: "$";
-  font-size: 27px;
+.airplanet-logo {
+  padding-top: 13px;
 }
 
-
-.rates__desc-title {
-  line-height: 30px;
-  padding-bottom: 3px;
-}
-.rates__container {
-  width: 251px;
+.comments {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.rates__logo-container {
-  position: relative;
-  display: inline-block;
-  border-radius: 50%;
-  overflow: hidden;
-  text-align: center;
-  background: #4b73b5;
-  width: 72px;
-  height: 72px;
-  margin-bottom: 23px;
-}
-
-.rates__logo {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.rates__desc-item {
-  line-height: 30px;
-}
-
-.rates__item-list {
-  padding-left: 26px;
-}
-
-.rates__item-list .rates__desc-item {
-  line-height: 35px;
-}
-
-
-
-.news__title {
+.comments__title {
+  display: flex;
   font-family: "roboto", sans-serif;
   font-size: 49px;
   font-style: normal;
   font-weight: bold;
-  margin: 0px 0px 64px;
+  margin: 0px 0px 36px;
 }
 
-.news__pic-container {
-  display: inline-block;
-  width: 160px;
-  height: 160px;
+.comments__pic-container {
+  display: block;
+  min-width: 160px;
+  max-height: 160px;
   border-radius: 50%;
   overflow: hidden;
-  vertical-align: top;
-  margin-right: 14px;
+  margin-right: 22px;
 }
 
-.news__post img {
+.comments__pic-container img {
   display: block;
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.news__posts {
+.comments__posts {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
 }
 
-.news__post-date {
-  display: inline-block;
+.comments__post:last-child {
+  margin-bottom: 0px;
+}
+
+.comments__post {
+  display: flex;
+  min-height: 222px;
+}
+
+.comments__post-date {
+  display: flex;
   font-family: 'roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   color: #656464;
   line-height: 21px;
+  padding-bottom: 3px;
 }
 
-.news__post-subject {
+.comments__post-subject {
+  display: flex;
   font-family: 'roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -372,7 +295,8 @@ ul li {
   margin: 0px;
 }
 
-.news__post-text {
+.comments__post-text {
+  display: flex;
   font-family: 'roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -382,22 +306,14 @@ ul li {
   margin-top: 10px;
 }
 
-.news__post-item {
-  display: inline-block;
-  width: 654px;
+.comments__post-item {
+  display: flex;
+  flex-direction: column;
   margin: 0px;
 }
 
-.news__post {
-  margin-bottom: 32px;
-}
-
-.news__post:nth-child(3n) {
-  margin-bottom: 0px;
-}
-
-.news {
-  margin-bottom: 37px;
+.comments__post:last-child {
+  min-height: 213px;
 }
 
 .pagination {
@@ -407,7 +323,6 @@ ul li {
 
 .pagination__container {
   display: flex;
-  justify-content: center;
 }
 
 .pagination__display {
@@ -479,6 +394,75 @@ ul li {
   align-items: center;
 }
 
+.support {
+  background-image: url(./img/support_bg.png);
+}
+
+.support__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "roboto", serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.667;
+  margin-bottom: 107px;
+}
+
+.support__msg {
+  display: flex;
+  width: 639px;
+  height: 170px;
+  align-items: center;
+  margin: 0px;
+}
+.feedback__container {
+  width: 562px;
+}
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  font-size: 14px;
+  font-family: "roboto", serif;
+  color: rgb(34, 31, 31);
+}
+.feedback__form-label {
+flex-grow: 1;
+}
+.feedback__form-title {
+  font-family: "roboto", serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 0.776;
+  margin: 0px 0px 24px;
+}
+.feedback__form-recepient {
+  display: flex;
+  justify-content: space-between;
+}
+.feedback__form-recepient label {
+  flex-grow: 1;
+}
+.feedback__form-input {
+  border: none;
+  width: 100%;
+  padding: 9px;
+}
+.feedback__form-input:focus {
+  outline: 1px solid #4b73b5;
+}
+.feedback__answer-comment {
+  min-height: 90px;
+  resize: vertical;
+}
+.feedback__form-name {
+  margin-bottom: 5px;
+}
+
 .footer {
   display: flex;
   background: #4b73b5;
@@ -489,18 +473,16 @@ ul li {
   justify-content: space-between;
   align-items: center;
   min-height: 76px;
+  width: 100%;
 }
 
-.footer__container a {
+.social-nets a {
   display: flex;
   color: #fff;
   justify-content: space-between;
 }
-
-.about-authors,
 .social-nets,
-.social-nets__item,
-.social-nets__title {
+.social-nets__item, .social-nets__title {
   display: flex;
   color: #fff;
 }
@@ -511,6 +493,7 @@ ul li {
   font-weight: 300;
   max-width: 237px;
   padding-left: 20px;
+  color: #fff;
 }
 
 .social-nets__title {
@@ -542,7 +525,6 @@ ul li {
 .social-nets ul {
   display: flex;
 }
-
 .social-nets__item a {
   position: relative;
   display: inline-block;
@@ -558,4 +540,9 @@ ul li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.loftschool-link {
+  display: inline;
+  color: #fff;
+  font-weight: bold;
 } */

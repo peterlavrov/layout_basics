@@ -1,0 +1,296 @@
+@import url(./sidebar.css);
+
+.page-content__container {
+  display: flex;
+  min-height: 100%;
+}
+
+.main-content {
+  flex-grow: 1;
+  flex-direction: column;
+}
+.main-content {
+  width: 900px;
+}
+
+.page-content__container {
+  padding-bottom: 54px;
+}
+
+ul li {
+  list-style: none;
+}
+
+
+.airplanet-logo {
+  margin-bottom: 7px;
+}
+
+.rates {
+  display: flex;
+  flex-direction: column;
+}
+
+.rates__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+}
+.rates__item {
+  padding-left: 0px;
+  display: inline-block;
+  width: 221px;
+  text-align: center;
+  vertical-align: top;
+}
+.rates__title {
+  font-family: "roboto", sans-serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.rates__item h4 {
+  font-family: "roboto", sans-serif;
+  font-size: 10.78px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 2.6px;
+  margin-bottom: 14px;
+}
+
+.rates__item-list li {
+  text-align: left;
+  line-height: 30px;
+}
+
+.rates__item-list li:before {
+  display: inline-block;
+  content: "●";
+  font-size: 9px;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.rates__desc {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.rates__price {
+  font-family: "roboto", sans-serif;
+  font-size: 53.89px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 12px 0;
+}
+
+.rates__price:before {
+  content: "$";
+  font-size: 27px;
+}
+
+
+.rates__desc-title {
+  line-height: 30px;
+  padding-bottom: 3px;
+}
+.rates__container {
+  width: 251px;
+}
+
+.rates__logo-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  background: #4b73b5;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 23px;
+}
+
+.rates__logo {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rates__desc-item {
+  line-height: 30px;
+}
+
+.rates__item-list {
+  padding-left: 26px;
+}
+
+.rates__item-list .rates__desc-item {
+  line-height: 35px;
+}
+
+
+
+.news__title {
+  font-family: "roboto", sans-serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px 0px 64px;
+}
+
+.news__pic-container {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: top;
+  margin-right: 14px;
+}
+
+.news__post img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.news__posts {
+  margin: 0px;
+  padding: 0px;
+}
+
+.news__post-date {
+  display: inline-block;
+  font-family: 'roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #656464;
+  line-height: 21px;
+}
+
+.news__post-subject {
+  font-family: 'roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+  line-height: 21px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.news__post-text {
+  font-family: 'roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #000;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+.news__post-item {
+  display: inline-block;
+  width: 654px;
+  margin: 0px;
+}
+
+.news__post {
+  margin-bottom: 32px;
+}
+
+.news__post:nth-child(3n) {
+  margin-bottom: 0px;
+}
+
+.news {
+  margin-bottom: 37px;
+}
+
+.pagination {
+  display: flex;
+  flex-grow: 1;
+}
+
+.pagination__container {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__display {
+  display: flex;
+  font-family: 'roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #656464;
+  height: 25px;
+}
+
+.pagination__list {
+  display: flex;
+  font-size: 0px;
+  padding-left: 0px;
+}
+
+.pagination__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.pagination__button {
+  display: flex;
+  text-decoration: none;
+  color: #656464;
+  vertical-align: middle;
+}
+
+.pagination__link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.pagination__item--active .pagination__link {
+  color: #fff;
+}
+
+.pagination__item--active {
+  background: #4b73b5;
+}
+
+.pagination__item-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+  border-radius: 10%;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.pagination__display-text {
+  display: flex;
+  align-items: center;
+}

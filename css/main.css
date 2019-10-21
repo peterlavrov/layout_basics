@@ -2,7 +2,7 @@
 @import url(./fonts.css);
 @import url(./base.css);
 @import url(./header.css);
-@import url(./page-content.css);
+@import url(./index__main-content.css);
 @import url(./footer.css);
 
 
@@ -96,10 +96,6 @@ body {
   display: flex;
 }
 
-.main-content {
-  flex-grow: 1;
-  flex-direction: column;
-}
 
 .nav {
   max-width: 194px;
@@ -113,18 +109,6 @@ body {
   flex-direction: column;
   padding-left: 18px;
   width: 181px;
-}
-
-.main-content {
-  width: 900px;
-}
-
-.page-content__container {
-  padding-bottom: 54px;
-}
-
-ul li {
-  list-style: none;
 }
 
 .nav__page-link:before {
@@ -205,6 +189,23 @@ ul li {
 .nav__item--active .nav__page-link--team--icon:before {
   background-image: url('./img/team_icon_active.png');
 }
+
+.main-content {
+  flex-grow: 1;
+  flex-direction: column;
+}
+.main-content {
+  width: 900px;
+}
+
+.page-content__container {
+  padding-bottom: 54px;
+}
+
+ul li {
+  list-style: none;
+}
+
 
 .airplanet-logo {
   margin-bottom: 7px;
