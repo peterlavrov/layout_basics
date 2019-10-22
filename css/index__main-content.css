@@ -1,29 +1,26 @@
 @import url(./sidebar.css);
 
+.header {
+  margin-bottom: 13px;
+}
+
+.nav {
+  padding-top: 31px;
+}
 .page-content__container {
   display: flex;
   min-height: 100%;
+  margin-bottom: 59px;
 }
 
 .main-content {
   flex-grow: 1;
   flex-direction: column;
-}
-.main-content {
-  width: 900px;
-}
-
-.page-content__container {
-  padding-bottom: 54px;
+  padding-left: 7px;
 }
 
 ul li {
   list-style: none;
-}
-
-
-.airplanet-logo {
-  margin-bottom: 7px;
 }
 
 .rates {
@@ -33,23 +30,23 @@ ul li {
 
 .rates__list {
   display: flex;
+  width: 85%;
   justify-content: space-between;
   padding: 0px;
-  margin: 0px;
+  margin: 0 0 78px 12px;
 }
 .rates__item {
-  padding-left: 0px;
-  display: inline-block;
-  width: 221px;
-  text-align: center;
-  vertical-align: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
 }
 .rates__title {
   font-family: "roboto", sans-serif;
   font-size: 49px;
   font-style: normal;
   font-weight: bold;
-  margin: 0px;
+  margin: 0 0 74px;
 }
 
 .rates__item h4 {
@@ -58,7 +55,11 @@ ul li {
   font-style: normal;
   font-weight: bold;
   letter-spacing: 2.6px;
-  margin-bottom: 14px;
+  margin-bottom: 17px;
+}
+.rates__item-list {
+display: flex;
+flex-direction: column;
 }
 
 .rates__item-list li {
@@ -75,11 +76,15 @@ ul li {
 }
 
 .rates__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
 }
+
 
 .rates__price {
   font-family: "roboto", sans-serif;
@@ -98,68 +103,57 @@ ul li {
 .rates__desc-title {
   line-height: 30px;
   padding-bottom: 3px;
+  text-align: center;
 }
 .rates__container {
-  width: 251px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .rates__logo-container {
-  position: relative;
-  display: inline-block;
+  display: flex;
   border-radius: 50%;
   overflow: hidden;
   text-align: center;
   background: #4b73b5;
   width: 72px;
   height: 72px;
-  margin-bottom: 23px;
+  margin-bottom: 27px;
+  justify-content: center;
+  align-items: center;
 }
 
-.rates__logo {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .rates__desc-item {
   line-height: 30px;
-}
-
-.rates__item-list {
-  padding-left: 26px;
 }
 
 .rates__item-list .rates__desc-item {
   line-height: 35px;
 }
 
-
-
+.news__post {
+  margin-bottom: 32px;
+  display: flex;
+}
 .news__title {
   font-family: "roboto", sans-serif;
   font-size: 49px;
   font-style: normal;
   font-weight: bold;
-  margin: 0px 0px 64px;
+  margin: 0px 0px 70px;
 }
 
 .news__pic-container {
-  display: inline-block;
+  display: flex;
   width: 160px;
   height: 160px;
   border-radius: 50%;
   overflow: hidden;
   vertical-align: top;
   margin-right: 14px;
-}
-
-.news__post img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .news__posts {
@@ -199,14 +193,11 @@ ul li {
 }
 
 .news__post-item {
-  display: inline-block;
-  width: 654px;
-  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 72%;
 }
 
-.news__post {
-  margin-bottom: 32px;
-}
 
 .news__post:nth-child(3n) {
   margin-bottom: 0px;
