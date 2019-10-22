@@ -78,7 +78,7 @@
 
 .comments__posts {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin: 0px;
   padding: 0px;
 }
@@ -250,6 +250,7 @@
 .form__elem {
   width: 51%;
   padding: 45px 0;
+  background: #f5f5f5;
 }
 
 .form__title {
@@ -265,7 +266,6 @@
 .form {
   display: flex;
   justify-content: center;
-  background: #f5f5f5;
 }
 .form-section {
   margin-bottom: 64px;
