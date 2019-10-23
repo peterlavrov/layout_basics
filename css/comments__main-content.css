@@ -341,6 +341,5 @@ justify-content: center;
 .form__input--textarea {
   min-height: 63px;
   resize: vertical;
-  border-color: #4b73b5;
   width: 97%;
 }
