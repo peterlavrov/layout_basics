@@ -228,8 +228,6 @@ flex-direction: column;
 
 .pagination__list {
   display: flex;
-  font-size: 0px;
-  padding-left: 0px;
 }
 
 .pagination__item {
@@ -249,12 +247,10 @@ flex-direction: column;
   display: flex;
   text-decoration: none;
   color: #656464;
-  vertical-align: middle;
 }
 
 .pagination__link {
   display: flex;
-  justify-content: center;
   text-decoration: none;
   color: #000;
 }
