@@ -162,9 +162,7 @@
   margin: auto;
   filter: grayscale(100%);
 }
-.partners__active-pic {
-  filter: grayscale(0%);
-}
+
 .partners__pic:hover {
   filter: grayscale(0%);
   cursor: pointer;

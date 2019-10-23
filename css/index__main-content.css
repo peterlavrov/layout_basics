@@ -6,6 +6,7 @@
 
 .nav {
   padding-top: 31px;
+  padding-right: 7px;
 }
 .page-content__container {
   display: flex;
@@ -16,7 +17,6 @@
 .main-content {
   flex-grow: 1;
   flex-direction: column;
-  padding-left: 7px;
 }
 
 ul li {
