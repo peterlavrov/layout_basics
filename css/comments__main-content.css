@@ -49,6 +49,7 @@
 .comments {
   display: flex;
   flex-direction: column;
+  margin-bottom: 52px;
 }
 
 .comments__title {
@@ -132,10 +133,6 @@
   display: flex;
   flex-direction: column;
   margin: 0px;
-}
-
-.comments__post:last-child {
-  min-height: 213px;
 }
 
 .pagination {
@@ -277,7 +274,7 @@ justify-content: center;
 }
 
 .form-section {
-  margin-bottom: 70px;
+  margin-bottom: 68px;
 }
 
 .form__row {
