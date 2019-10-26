@@ -54,6 +54,7 @@
   text-align: left;
   background-position: -5px -0px;
 }
+
 .intro__btn:before {
   display: inline-block;
   position: absolute;
@@ -70,14 +71,15 @@
   opacity: 0;
   transition: opacity .3s;
 }
+
 .intro__btn:hover:before {
   opacity: 1;
 }
 
 .intro__btn:hover {
- transition: .3s;
- background: #1c5bc4;
- color: #fff;
+  transition: .3s;
+  background: #1c5bc4;
+  color: #fff;
 }
 
 .intro__block {
@@ -88,23 +90,29 @@
   opacity: 0;
   animation: welcome-animation .6s 1s forwards;
 }
+
 @keyframes welcome-animation {
   from {
     opacity: 0;
   }
-  25%{
+
+  25% {
     transform: translateY(-60px);
-    
+
   }
+
   50% {
     transform: translateY(0px);
   }
+
   75% {
     transform: translateY(-20px);
   }
+
   85% {
     opacity: 1;
   }
+
   to {
     opacity: 1;
   }
