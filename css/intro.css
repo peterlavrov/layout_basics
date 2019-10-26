@@ -86,25 +86,24 @@
   flex-direction: column;
   align-items: center;
   opacity: 0;
-  animation: welcome-animation .5s 1s forwards;
+  animation: welcome-animation .6s 1s forwards;
 }
 @keyframes welcome-animation {
   from {
     opacity: 0;
   }
   25%{
-    transform: translateY(-40px);
+    transform: translateY(-60px);
     
   }
   50% {
     transform: translateY(0px);
   }
   75% {
-    transform: translateY(-15px);
+    transform: translateY(-20px);
   }
   85% {
     opacity: 1;
-
   }
   to {
     opacity: 1;
