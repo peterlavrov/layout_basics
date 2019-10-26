@@ -1,6 +1,3 @@
-/* @import url(./base.css); */
-
-
 .intro {
   position: absolute;
   top: 0;
@@ -38,11 +35,11 @@
   font-size: 12px;
   font-weight: bold;
   font-style: normal;
-  /* line-height: 3.6; */
   padding: 14.5px 19px;
   letter-spacing: 2.4px;
   color: #1c5bc4;
   text-decoration: none;
+  transition: background .3s, color .3s;
 }
 
 .intro__btn:after {
@@ -57,10 +54,11 @@
   text-align: left;
   background-position: -5px -0px;
 }
-
-.intro__btn:hover:after {
+.intro__btn:before {
   display: inline-block;
+  position: absolute;
   content: "";
+  left: 164px;
   margin-left: 8px;
   width: 15px;
   height: 14px;
@@ -69,16 +67,46 @@
   text-indent: -9999px;
   text-align: left;
   background-position: -5px -19px;
+  opacity: 0;
+  transition: opacity .3s;
+}
+.intro__btn:hover:before {
+  opacity: 1;
 }
 
 .intro__btn:hover {
-  background: #1c5bc4;
-  color: #fff;
-
+ transition: .3s;
+ background: #1c5bc4;
+ color: #fff;
 }
 
 .intro__block {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  animation: welcome-animation .5s 1s forwards;
+}
+@keyframes welcome-animation {
+  from {
+    opacity: 0;
+  }
+  25%{
+    transform: translateY(-40px);
+    
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-15px);
+  }
+  85% {
+    opacity: 1;
+
+  }
+  to {
+    opacity: 1;
+  }
 }
