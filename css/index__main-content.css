@@ -13,12 +13,12 @@
 
 .nav__page-link:before {
   content: "";
-  display: inline-block;
+  margin-right: 17px;
+  /* display: inline-block;
   vertical-align: middle;
   width: 23px;
   height: 19px;
-  margin-right: 17px;
-  background: center center / contain no-repeat;
+  background: center center / contain no-repeat; */
 }
 
 .nav__page-link {
@@ -30,16 +30,18 @@
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 2.4px;
+  transition: color .3s;
 }
 
 .nav__page-link:hover {
   color: #000;
+  transition: color .3s;
 }
 
 .nav__item {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 90px;
+  margin-right: 91px;
   margin-bottom: 13px;
 }
 
@@ -52,44 +54,111 @@
 }
 
 .nav__item--active .nav__page-link--main--icon:before {
-  background-image: url('../img/main_icon_active.png');
+  width: 23px; height: 18px;
+  background: url('../img/nav_sprites.png') -96px -10px;
 }
+
 
 .nav__page-link--main--icon:before {
-  background-image: url('../img/main_icon.png');
+  width: 23px; height: 18px;
+  background: url('../img/nav_sprites.png') -96px -48px;
+  z-index: 10;
+  opacity: 1;
+  transition: opacity .3s;
 }
 
-.nav__page-link--feed--icon:before {
-  background-image: url('../img/feed_icon.png');
-}
-
-.nav__page-link--team--icon:before {
-  background-image: url('../img/team_icon.png');
+.nav__page-link--main--icon:after {
+  position: absolute;
+  content: "";
+  width: 23px; height: 18px;
+  background: url('../img/nav_sprites.png') -96px -10px;
 }
 
 .nav__page-link--main--icon:hover:before {
-  background-image: url('../img/main_icon_active.png');
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.nav__page-link--feed--icon:before {
+  width: 23px; height: 18px;
+  background: url('../img/nav_sprites.png') -10px -48px;
+  z-index: 10;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.nav__page-link--feed--icon:after {
+  position: absolute;
+  content: "";
+  width: 23px; height: 18px;
+  background: url('../img/nav_sprites.png') -50px -48px;
 }
 
 .nav__page-link--feed--icon:hover:before {
-  background-image: url('../img/feed_icon_active.png');
+  opacity: 0;
+  transition: opacity .3s;
+}
+.nav__page-link--team--icon:before {
+  width: 23px; height: 18px;
+  background: url('../img/nav_sprites.png') -10px -10px;
+  z-index: 10;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.nav__page-link--team--icon:after {
+  position: absolute;
+  content: "";
+  width: 23px; height: 18px;
+  background: url('../img/nav_sprites.png') -53px -10px;
 }
 
 .nav__page-link--team--icon:hover:before {
-  background-image: url('../img/team_icon_active.png');
+  opacity: 0;
+  transition: opacity .3s;
 }
 
-.nav__item--active .nav__page-link--main--icon:before {
-  background-image: url('../img/main_icon_active.png');
+/* .nav__page-link--main--icon:hover:before {
+  width: 17px; height: 18px;
+  background: url('../img/nav_sprites.png') -96px -10px;
+  transition: background .3s;
+} */
+
+/* .nav__item--active .nav__page-link--main--icon:before {
+  width: 17px; height: 18px;
+  background: url('../img/nav_sprites.png') -96px -10px;
+}
+
+.nav__page-link--feed--icon:before {
+  width: 20px; height: 18px;
+  background: url('../img/nav_sprites.png') -10px -48px;
+}
+
+.nav__page-link--feed--icon:hover:before {
+  width: 20px; height: 18px;
+  background: url('../img/nav_sprites.png') -50px -48px;
 }
 
 .nav__item--active .nav__page-link--feed--icon:before {
-  background-image: url('../img/feed_icon_active.png');
+  width: 20px; height: 18px;
+  background: url('../img/nav_sprites.png') -50px -48px;
+}
+
+.nav__page-link--team--icon:before {
+  width: 23px; height: 18px;
+  background: url('../img/nav_sprites.png') -10px -10px;
+}
+
+
+.nav__page-link--team--icon:hover:before {
+  width: 23px; height: 18px;
+  background: url('../img/nav_sprites.png') -53px -10px;
 }
 
 .nav__item--active .nav__page-link--team--icon:before {
-  background-image: url('../img/team_icon_active.png');
-}
+  width: 23px; height: 18px;
+  background: url('../img/nav_sprites.png') -53px -10px;
+} */
 
 .page-content__container {
   display: flex;
@@ -387,6 +456,12 @@
   display: flex;
   text-decoration: none;
   color: #000;
+  transition: color .3s;
+}
+
+.pagination__link:hover {
+  color: #1c5bc3;
+  transition: color .3s;
 }
 
 .pagination__item--active .pagination__link {

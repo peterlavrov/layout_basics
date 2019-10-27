@@ -35,4 +35,11 @@
   font-size: 14px;
   text-align: right;
   text-decoration: underline;
+  opacity: .7;
+  transition: opacity .3s;
+}
+.contacts__schedule:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity .3s;
 }
