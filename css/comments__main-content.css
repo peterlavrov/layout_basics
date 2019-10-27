@@ -4,7 +4,6 @@
 .page-content__container {
   display: flex;
   min-height: 100%;
-  margin-bottom: 60px;
 }
 
 .sidebar {
@@ -13,7 +12,7 @@
   width: 26%;
 }
 .header {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 .main-content {
   display: flex;
@@ -109,6 +108,7 @@
 
 .page-content {
   flex-grow: 1;
+  margin-bottom: 61px;
 }
 
 .breadcrumps {
