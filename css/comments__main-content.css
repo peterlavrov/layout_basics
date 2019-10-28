@@ -136,7 +136,7 @@
 
 .page-content {
   flex-grow: 1;
-  margin-bottom: 61px;
+  margin-bottom: 49px;
 }
 
 .breadcrumps {
@@ -308,9 +308,14 @@
 
 .pagination__link {
   display: flex;
-  justify-content: center;
   text-decoration: none;
   color: #000;
+  transition: color .3s;
+}
+
+.pagination__link:hover {
+  color: #1c5bc3;
+  transition: color .3s;
 }
 
 .pagination__item--active .pagination__link {
@@ -471,5 +476,130 @@
   min-height: 63px;
   resize: vertical;
   width: 97%;
- 
+}
+
+.form__question-option {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.form__question-options {
+display: flex;
+flex-direction: column;
+}
+
+.form__question-labels {
+display: flex;
+}
+
+.form__question-text {
+  margin-bottom: 7px;
+}
+
+
+.form__question-option input {
+  display: none;
+}
+
+.form__question-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.form__question-inner {
+  display: none;
+  min-width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1c5bc3;
+}
+
+.form__question-radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid 1px #cacaca;
+  margin-right: 4px;
+}
+
+.form__question-choose:checked + .form__question-radio {
+  border: solid 1px #1c5bc3;
+}
+.form__question-choose:checked ~ .form__question-title {
+  color: #1c5bc3;
+}
+
+.form__question-choose:checked + .form__question-radio .form__question-inner {
+  display: block;
+}
+
+.form__submit-img {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border-radius: 3px;
+  border: solid 1px #1c5bc3;
+  text-transform: uppercase;
+  font-family: "roboto";
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  padding: 14.5px 19px;
+  letter-spacing: 2.4px;
+  color: #1c5bc4;
+  text-decoration: none;
+  transition: background .3s, color .3s;
+}
+
+.form__submit-img:after {
+  display: inline-block;
+  content: "";
+  margin-left: 8px;
+  width: 15px;
+  height: 14px;
+  background: url(../img/intro_sprite.png) no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+  background-position: -5px -0px;
+}
+
+.form__submit-img:before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  left: 111px;
+  margin-left: 8px;
+  width: 15px;
+  height: 14px;
+  background: url(../img/intro_sprite.png) no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+  background-position: -5px -19px;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.form__submit-img:hover:before {
+  opacity: 1;
+}
+
+.form__submit-img:hover {
+  transition: .3s;
+  background: #1c5bc4;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form__button {
+  position: relative;
+}
+
+.form__submit-button {
+  display: none;
 }
