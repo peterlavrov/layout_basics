@@ -550,7 +550,8 @@ display: flex;
   font-style: normal;
   padding: 14.5px 19px;
   letter-spacing: 2.4px;
-  color: #1c5bc4;
+  color: #fff;
+  background: #1c5bc4;
   text-decoration: none;
   transition: background .3s, color .3s;
 }
@@ -565,7 +566,7 @@ display: flex;
   overflow: hidden;
   text-indent: -9999px;
   text-align: left;
-  background-position: -5px -0px;
+  background-position: -5px -19px;
 }
 
 .form__submit-img:before {
@@ -580,7 +581,7 @@ display: flex;
   overflow: hidden;
   text-indent: -9999px;
   text-align: left;
-  background-position: -5px -19px;
+  background-position: -5px -0px;
   opacity: 0;
   transition: opacity .3s;
 }
@@ -591,8 +592,8 @@ display: flex;
 
 .form__submit-img:hover {
   transition: .3s;
-  background: #1c5bc4;
-  color: #fff;
+  background: #fff;
+  color: #1c5bc4;
   cursor: pointer;
 }
 
