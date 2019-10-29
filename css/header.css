@@ -16,6 +16,7 @@
 .contacts {
   padding: 17px 20px 19px 0;
   flex-shrink: 0;
+  position: relative;
 }
 
 .contacts__phone {
@@ -28,18 +29,88 @@
 }
 
 .contacts__schedule {
-  color: #fff;
+  position: relative;
+  color: rgba(255, 255, 255, .7);
   font-family: "roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   text-align: right;
   text-decoration: underline;
-  opacity: .7;
-  transition: opacity .3s;
+  transition: color .3s;
 }
 .contacts__schedule:hover {
-  opacity: 1;
+  color: rgba(255, 255, 255, 1);
   cursor: pointer;
+  transition: color .3s;
+}
+
+.contacts__schedule:hover .contacts__dropdown-menu {
+  display: block;
+  position: absolute;
+  top: 42px;
+  left: 12px;
+  border-radius: 3px;
+  box-shadow: 2.5px 4.3px 5px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  z-index: 20;
+  opacity: 1;
+}
+
+.contacts__dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 9999px;
+  border-radius: 3px;
+  box-shadow: 2.5px 4.3px 5px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  padding: 11px 21px 16px 18px;
+  z-index: 20;
+  opacity: 0;
   transition: opacity .3s;
+}
+.contacts__dropdown-hours {
+  font-family: "roboto";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  font-style: normal;
+  color: #4b73b5;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.contacts__dropdown-lunch {
+  font-family: "roboto";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  font-style: normal;
+  color: black;
+  text-align: left;
+}
+.contacts__dropdown-menu:after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -15px;
+  left: 136px;
+  border: 15px solid transparent;
+  border-bottom-color: white;
+  border-left-width: 14px;
+  border-right-width: 14px;
+  border-top-width: 0px;
+  z-index: 25;
+}
+.contacts__dropdown-menu:before{
+  content: "";
+  position: absolute;
+  top: -26px;
+  left: 58px;
+  right: 0;
+  height: 28px;
+  background: transparent;
 }

@@ -82,6 +82,16 @@
   color: #fff;
 }
 
+.intro__btn:active:before {
+  opacity: 1;
+}
+
+.intro__btn:active {
+  transition: .3s;
+  background: #1c5bc4;
+  color: #fff;
+}
+
 .intro__block {
   display: flex;
   position: relative;

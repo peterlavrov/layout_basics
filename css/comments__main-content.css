@@ -597,6 +597,17 @@ display: flex;
   cursor: pointer;
 }
 
+.form__submit-img:active:before {
+  opacity: 1;
+}
+
+.form__submit-img:active {
+  transition: .3s;
+  background: #fff;
+  color: #1c5bc4;
+  cursor: pointer;
+}
+
 .form__button {
   position: relative;
 }
