@@ -47,14 +47,9 @@
 
 .contacts__schedule:hover .contacts__dropdown-menu {
   display: block;
-  position: absolute;
-  top: 42px;
   left: 12px;
-  border-radius: 3px;
-  box-shadow: 2.5px 4.3px 5px 0 rgba(0, 0, 0, 0.2);
-  background: #fff;
-  z-index: 20;
   opacity: 1;
+  animation: dropdown .3s forwards;
 }
 
 .contacts__dropdown-menu {
@@ -68,7 +63,6 @@
   padding: 11px 21px 16px 18px;
   z-index: 20;
   opacity: 0;
-  transition: opacity .3s;
 }
 .contacts__dropdown-hours {
   font-family: "roboto";
@@ -113,4 +107,14 @@
   right: 0;
   height: 28px;
   background: transparent;
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
 }
