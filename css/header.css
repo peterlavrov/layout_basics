@@ -49,7 +49,7 @@
 .contacts__schedule:hover .contacts__dropdown-menu {
   display: block;
   left: 12px;
-  opacity: 1;
+  /* opacity: 1; */
   animation: dropdown .3s forwards;
 }
 
