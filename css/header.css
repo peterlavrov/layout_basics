@@ -38,6 +38,7 @@
   text-align: right;
   text-decoration: underline;
   transition: color .3s;
+  opacity: 1;
 }
 .contacts__schedule:hover {
   color: rgba(255, 255, 255, 1);
