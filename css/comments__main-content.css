@@ -472,6 +472,10 @@
   color: rgba(34, 31, 31, 0.5);
 }
 
+.form__input:focus::placeholder {
+  color: rgba(34, 31, 31, 1);
+}
+
 .form__input--textarea {
   min-height: 63px;
   resize: vertical;
