@@ -500,13 +500,20 @@ display: flex;
   margin-bottom: 7px;
 }
 
-
 .form__question-option input {
-  display: none;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  z-index: -10;
+}
+
+.form__question-choose:focus ~ .form__question-radio {
+  outline: solid 1px #1c5bc3;
 }
 
 .form__question-checkbox {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   
@@ -617,19 +624,22 @@ display: flex;
 }
 
 .form__submit-button {
-  display: none;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
-.form__button-label:focus .form__submit-img:before {
+.form__button-label {
+  position: relative;
+}
+
+.form__submit-button:focus ~ .form__submit-img:before {
   opacity: 1;
 }
 
-.form__button-label:focus .form__submit-img {
+.form__submit-button:focus ~ .form__submit-img {
   transition: .3s;
   background: #fff;
   color: #1c5bc4;
   cursor: pointer;
-}
-.form__question-option:focus {
-  outline: solid 1px #1c5bc3;
 }
