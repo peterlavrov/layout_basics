@@ -620,9 +620,6 @@ display: flex;
   display: none;
 }
 
-
-
-
 .form__button-label:focus .form__submit-img:before {
   opacity: 1;
 }
@@ -634,5 +631,5 @@ display: flex;
   cursor: pointer;
 }
 .form__question-option:focus {
-  border: solid 1px #1c5bc3;
+  outline: solid 1px #1c5bc3;
 }
