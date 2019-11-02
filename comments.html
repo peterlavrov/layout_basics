@@ -18,16 +18,59 @@
         </a>
         <address class="contacts">
           <a href="tel:+7800039210" class="contacts__phone">8 (800) 00-392-10</a>
-          <div class="contacts__schedule">График работы</div>
+          <div class="contacts__schedule">
+            <u>График работы</u>
+            <div class="contacts__dropdown-menu">
+              <div class="contacts__dropdown-hours">пн-вс: 09:00-20:00</div>
+              <div class="contacts__dropdown-lunch">обед: 14:00-14:30</div>
+            </div>
+          </div>
         </address>
       </div>
     </header>
     <main class="page-content">
       <div class="container page-content__container">
-        <aside class="nav">
+        <aside class="sidebar">
+          <section class="support">
+            <div class="container support__container">
+              <div class="support__block">
+                <p class="support__msg">
+                  Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно
+                  оставить <span class="support__msg-hint">заявку на
+                    сайте</span> или же позвонить по номеру круглосуточной поддержки <br><span
+                    class="support__msg-number">8
+                    (800)
+                    00-392-10</span>.
+                  </br>
+              </div>
+            </div>
+          </section>
+          <div class="social-nets">
+            <div class="social-nets__title">Наши социальные сети</div>
+            <ul class="social-nets__links">
+              <li class="social-nets__item">
+                <a href="https://vk.com/lavrovpeter" class="social-nets__vk-link"></a>
+              </li>
+              <li class="social-nets__item">
+                <a href="#" class="social-nets__fb-link"></a>
+              </li>
+              <li class="social-nets__item">
+                <a href="#" class="social-nets__gplus-link"></a>
+              </li>
+              <li class="social-nets__item">
+                <a href="#" class="social-nets__twitter-link"></a>
+              </li>
+              <li class="social-nets__item">
+                <a href="#" class="social-nets__mail-link"></a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="main-content">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="./" class="nav__page-link nav__page-link--main--icon">ГЛАВНАЯ</a>
+              <a href="./main.html" class="nav__page-link nav__page-link--main--icon">ГЛАВНАЯ</a>
             </li>
             <li class="nav__item nav__item--active">
               <a href="#" class="nav__page-link nav__page-link--feed--icon">ОТЗЫВЫ</a>
@@ -36,18 +79,6 @@
               <a href="./team.html" class="nav__page-link nav__page-link--team--icon">ЭКИПАЖ</a>
             </li>
           </ul>
-        </aside>
-        <div class="main-content">
-          <nav class="breadcrumps">
-            <ul class="breadcrumps__list">
-              <li class="breadcrumps__item">
-                <a href="./" class="breadcrumps__item-link">Главная</a>
-              </li>
-              <li class="breadcrumps__item breadcrumps__item--last">
-                <span>Отзывы</span>
-              </li>
-            </ul>
-          </nav>
           <section class="comments">
             <h2 class="comments__title">Отзывы</h2>
             <ul class="comments__posts">
@@ -138,110 +169,92 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <section class="support">
-        <div class="container support__container">
-          <p class="support__msg">
-            Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно
-            оставить <span class="support__msg-hint">заявку на
-              сайте</span> или же позвонить по номеру круглосуточной поддержки <span class="support__msg-number">8 (800)
-              00-392-10</span>.
-          </p>
-        </div>
-      </section>
-      <section class="form-section">
-        <div class="container form__container">
-          <div class="form">
-            <form action="" method="GET" class="form__elem">
-              <h2 class="form__title">Оставить отзыв</h2>
-              <div class="form__row">
-                <label for="" class="form__block">
-                  <div class="form__block-title">Ваше имя</div>
-                  <input type="text" name="" id="" class="form__input" placeholder="Андрей">
-                </label>
-                <label for="" class="form__block">
-                  <div class="form__block-title">Ссылка на профиль VK</div>
-                  <input type="text" name="" id="" class="form__input" placeholder="vk.com/example">
-                </label>
-              </div>
-              <div class="form__row">
-                <div class="form__block">
-                  <div class="form__block-title">Текст отзыва</div>
-                  <textarea type="text" name="" class="form__input form__input--textarea" placeholder="Мне понравилось"></textarea>
-                </div>
-              </div>
-              <div class="form__row">
-                <div class="form__question">
-                  <div class="form__question-options">
-                      <div class="form__question-title">Отображать фото в отзыве?</div>
-                    <label class="form__question-option">
-                      <div class="form__question-radio">
-                        <input type="radio" class="form__question-choose" name="show-photo" checked>
-                      </div>
-                      <div class="form__question-title">
-                        Да
-                      </div>
+          <section class="form-section">
+            <div class="container form__container">
+              <div class="form">
+                <form action="" method="GET" class="form__elem">
+                  <h2 class="form__title">Оставить отзыв</h2>
+                  <div class="form__row">
+                    <label for="" class="form__block">
+                      <div class="form__block-title">Ваше имя</div>
+                      <input type="text" name="" id="" class="form__input" placeholder="Андрей">
                     </label>
-                    <label class="form__question-option">
-                      <div class="form__question-radio">
-                        <input type="radio" class="form__question-choose" name="show-photo">
-                      </div>
-                      <div class="form__question-title">
-                        Нет
-                      </div>
+                    <label for="" class="form__block">
+                      <div class="form__block-title">Ссылка на профиль VK</div>
+                      <input type="text" name="" id="" class="form__input" placeholder="vk.com/example">
                     </label>
                   </div>
-                      <div class="form__button">
-                        <input type="submit" class="form__submit-button" value="Отправить">
+                  <div class="form__row">
+                    <div class="form__block">
+                      <div class="form__block-title">Текст отзыва</div>
+                      <textarea type="text" name="" class="form__input form__input--textarea"
+                        placeholder="Мне понравилось"></textarea>
+                    </div>
+                  </div>
+                  <div class="form__row">
+                    <div class="form__question">
+                      <div class="form__question-options">
+                        <div class="form__question-text">Отображать фото в отзыве?</div>
+                        <div class="form__question-labels">
+                          <label class="form__question-option" for="form__answer-yes">
+                            <div class="form__question-checkbox">
+                              <input type="radio" class="form__question-choose" name="show-photo" id="form__answer-yes"
+                                checked>
+                              <div class="form__question-radio">
+                                <div class="form__question-inner"></div>
+                              </div>
+                              <div class="form__question-title">
+                                Да
+                              </div>
+                            </div>
+                          </label>
+                          <label class="form__question-option" for="form__answer-no">
+                            <div class="form__question-checkbox">
+                              <input type="radio" class="form__question-choose" name="show-photo" id="form__answer-no">
+                              <div class="form__question-radio">
+                                <div class="form__question-inner"></div>
+                              </div>
+                              <div class="form__question-title">
+                                Нет
+                              </div>
+                            </div>
+                          </label>
+                        </div>
                       </div>
-                </div>
+                      <div class="form__button">
+                        <label class="form__button-label" for="form__submit-button">
+                          <input type="submit" tabindex="0" class="form__submit-button" value="Отправить"
+                            id="form__submit-button">
+                          <div class="form__submit-img">Отправить</div>
+                        </label>
+                        </input>
+                      </div>
+                    </div>
+                </form>
               </div>
-            </form>
-          </div>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
 
+
+
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="about-authors">
+          Сделано с любовью и старанием на курсе "HTML + CSS" в <a href="https://loftschool.com"
+            class="loftschool-link">LoftSchool</a> Автор работы:
+          Лавров Петр
+        </div>
+        <div class="logo-pic">
+          <img src="./img/airplanet_logo.png" class="logo-pic__img" alt="Логотип air planet">
+        </div>
+
+      </div>
+    </footer>
   </div>
 
-  </main>
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="about-authors">
-        Сделано с любовью и старанием на курсе "HTML + CSS" в <a href="https://loftschool.com"
-          class="loftschool-link">LoftSchool</a> Автор работы:
-        Лавров Петр
-      </div>
-      <div class="logo-pic">
-        <img src="./img/airplanet_logo.png" class="logo-pic__img" alt="Логотип air planet">
-      </div>
-      <div class="social-nets">
-        <div class="social-nets__title">Наши социальные сети</div>
-        <ul class="social-nets__links">
-          <li class="social-nets__item">
-            <a href="https://vk.com/lavrovpeter" class="social-nets__vk-link"><img src="./img/vk.png" alt="Вконтакте"
-                class="social-nets__vk-pic"></a>
-          </li>
-          <li class="social-nets__item">
-            <a href="#" class="social-nets__fb-link"><img src="./img/fb.png" alt="Facebook"
-                class="social-nets__fb-pic"></a>
-          </li>
-          <li class="social-nets__item">
-            <a href="#" class="social-nets__gplus-link"><img src="./img/google.png" alt="Google плюс"
-                class="social-nets__gplus-pic"></a>
-          </li>
-          <li class="social-nets__item">
-            <a href="#" class="social-nets__twitter-link"><img src="./img/twitter.png" alt="Твиттер"
-                class="social-nets__twitter-pic"></a>
-          </li>
-          <li class="social-nets__item">
-            <a href="#" class="social-nets__mail-link"><img src="./img/mail.png" alt="Почта"
-                class="social-nets__mail-pic"></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
   </div>
 </body>
 

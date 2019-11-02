@@ -8,7 +8,6 @@
   <title>AIR PLANET - экипаж</title>
   <link rel="stylesheet" href="./css/team.css">
 </head>
-
 <body>
   <div class="wrapper">
     <header class="header">
@@ -18,33 +17,76 @@
         </a>
         <address class="contacts">
           <a href="tel:+7800039210" class="contacts__phone">8 (800) 00-392-10</a>
-          <div class="contacts__schedule"><u>График работы</u></div>
+          <div class="contacts__schedule">
+              <u>График работы</u>
+              <div class="contacts__dropdown-menu">
+                  <div class="contacts__dropdown-hours">пн-вс: 09:00-20:00</div>
+                  <div class="contacts__dropdown-lunch">обед: 14:00-14:30</div>
+              </div>
+          </div>
         </address>
       </div>
     </header>
     <main class="page-content">
       <div class="container page-content__container">
-        <aside class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="./" class="nav__page-link nav__page-link--main--icon">ГЛАВНАЯ</a>
-            </li>
-            <li class="nav__item">
-              <a href="./comments.html" class="nav__page-link nav__page-link--feed--icon">ОТЗЫВЫ</a>
-            </li>
-            <li class="nav__item nav__item--active">
-              <a href="#" class="nav__page-link nav__page-link--team--icon">ЭКИПАЖ</a>
-            </li>
-          </ul>
+        <aside class="sidebar">
+          <section class="partners">
+            <h2 class="partners__title">
+              Партнеры
+            </h2>
+            <ul class="partners__list">
+              <li class="partners__partner">
+                <img src="./img/sib_air.png" alt="Сибирские авиалинии" class="partners__pic">
+              </li>
+              <li class="partners__partner">
+                <img src="./img/ural.png" alt="Урал" class="partners__pic">
+              </li>
+              <li class="partners__partner">
+                <img src="./img/bmp_company.png" alt="BMP Company" class="partners__pic">
+              </li>
+              <li class="partners__partner">
+                <img src="./img/one air.png" alt="ONE AIR" class="partners__pic">
+              </li>
+              <li class="partners__partner">
+                <img src="./img/tetra_install.png" alt="TETRA Install" class="partners__pic">
+              </li>
+              <li class="partners__partner">
+                <img src="./img/bing_air.png" alt="Bing Air" class="partners__pic">
+              </li>
+            </ul>
+          </section>
+          <div class="social-nets">
+              <div class="social-nets__title">Наши социальные сети</div>
+              <ul class="social-nets__links">
+                <li class="social-nets__item">
+                  <a href="https://vk.com/lavrovpeter" class="social-nets__vk-link"></a>
+                </li>
+                <li class="social-nets__item">
+                  <a href="#" class="social-nets__fb-link"></a>
+                </li>
+                <li class="social-nets__item">
+                  <a href="#" class="social-nets__gplus-link"></a>
+                </li>
+                <li class="social-nets__item">
+                  <a href="#" class="social-nets__twitter-link"></a>
+                </li>
+                <li class="social-nets__item">
+                  <a href="#" class="social-nets__mail-link"></a>
+                </li>
+              </ul>
+            </div>
         </aside>
         <div class="main-content">
-          <nav class="breadcrumps">
-            <ul class="breadcrumps__list">
-              <li class="breadcrumps__item">
-                <a href="./" class="breadcrumps__item-link">Главная</a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./main.html" class="nav__page-link nav__page-link--main--icon">ГЛАВНАЯ</a>
               </li>
-              <li class="breadcrumps__item">
-                <span>Экипаж</span>
+              <li class="nav__item">
+                <a href="./comments.html" class="nav__page-link nav__page-link--feed--icon">ОТЗЫВЫ</a>
+              </li>
+              <li class="nav__item nav__item--active">
+                <a href="#" class="nav__page-link nav__page-link--team--icon">ЭКИПАЖ</a>
               </li>
             </ul>
           </nav>
@@ -153,31 +195,7 @@
               </li>
             </ul>
           </section>
-          <section class="partners">
-            <h2 class="partners__title">
-              Партнеры
-            </h2>
-            <ul class="partners__list">
-              <li class="partners__partner">
-                <img src="./img/bmp_company.png" alt="BMP Company" class="partners__pic">
-              </li>
-              <li class="partners__partner">
-                <img src="./img/tetra_install.png" alt="TETRA Install" class="partners__pic">
-              </li>
-              <li class="partners__partner">
-                <img src="./img/sib_air.png" alt="Сибирские авиалинии" class="partners__pic">
-              </li>
-              <li class="partners__partner">
-                <img src="./img/one air.png" alt="ONE AIR" class="partners__pic">
-              </li>
-              <li class="partners__partner">
-                <img src="./img/bing_air.png" alt="Bing Air" class="partners__pic">
-              </li>
-              <li class="partners__partner">
-                <img src="./img/ural.png" alt="Урал" class="partners__pic">
-              </li>
-            </ul>
-          </section>
+
         </div>
       </div>
     </main>
@@ -190,31 +208,6 @@
         </div>
         <div class="logo-pic">
           <img src="./img/airplanet_logo.png" class="logo-pic__img" alt="Логотип air planet">
-        </div>
-        <div class="social-nets">
-          <div class="social-nets__title">Наши социальные сети</div>
-          <ul class="social-nets__links">
-            <li class="social-nets__item">
-              <a href="https://vk.com/lavrovpeter" class="social-nets__vk-link"><img src="./img/vk.png" alt="Вконтакте"
-                  class="social-nets__vk-pic"></a>
-            </li>
-            <li class="social-nets__item">
-              <a href="#" class="social-nets__fb-link"><img src="./img/fb.png" alt="Facebook"
-                  class="social-nets__fb-pic"></a>
-            </li>
-            <li class="social-nets__item">
-              <a href="#" class="social-nets__gplus-link"><img src="./img/google.png" alt="Google плюс"
-                  class="social-nets__gplus-pic"></a>
-            </li>
-            <li class="social-nets__item">
-              <a href="#" class="social-nets__twitter-link"><img src="./img/twitter.png" alt="Твиттер"
-                  class="social-nets__twitter-pic"></a>
-            </li>
-            <li class="social-nets__item">
-              <a href="#" class="social-nets__mail-link"><img src="./img/mail.png" alt="Почта"
-                  class="social-nets__mail-pic"></a>
-            </li>
-          </ul>
         </div>
       </div>
     </footer>
